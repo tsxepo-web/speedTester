@@ -1,0 +1,24 @@
+<div *ngIf="clientInfo" class="flex justify-between pt-8">
+  <p>
+    IpAddress: <br />
+    <span class="text-red-800"> {{ clientInfo?.ip_address }}</span>
+  </p>
+  <p>
+    ISP: <br />
+    <span class="text-red-800">
+      {{ clientInfo.connection?.isp_name }}
+    </span>
+  </p>
+  <div *ngIf="downloadSpeed > 0">
+    Download Speed: <br />
+    <span class="text-red-800">
+      {{ downloadSpeed | number : "1.2-2" }} Mbps
+    </span>
+  </div>
+  <div *ngIf="uploadSpeed > 0">
+    Upload Speed: <br />
+    <span class="text-red-800">
+      {{ uploadSpeed | number : "1.2-2" }} Mbps
+    </span>
+  </div>
+</div>

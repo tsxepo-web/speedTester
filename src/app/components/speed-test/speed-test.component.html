@@ -1,0 +1,25 @@
+<div
+  class="grid place-items-center min-h-screen px-4 bg-gradient-to-r from-blue-500 to-teal-500"
+>
+  <div class="w-full max-w-lg text-center">
+    <div
+      class="flex justify-center items-center h-24"
+      *ngIf="downloadInProgress || uploadInProgress"
+    >
+      <div
+        class="spinner border-t-4 border-blue-800 rounded-full w-16 h-16 animate-spin"
+      ></div>
+    </div>
+    <button
+      class="text-2xl font-semibold text-white w-24 h-24 mt-6 rounded-full bg-white bg-opacity-20 backdrop-blur-lg shadow-lg border border-white border-opacity-30 transition-transform transform hover:scale-105 active:scale-95"
+      (click)="startTest()"
+      [disabled]="downloadInProgress || uploadInProgress"
+      *ngIf="!downloadInProgress && !uploadInProgress"
+    >
+      Start Test
+    </button>
+    <app-client-info />
+    <app-line-chart />
+    <app-bar-chart />
+  </div>
+</div>
