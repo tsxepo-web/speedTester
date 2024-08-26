@@ -1,7 +1,5 @@
 # NetworkTest
 
-<p></p>
-
 ![design](https://github.com/tsxepo-web/InternetSpeedTestFrontend/blob/master/src/assets/speedTestFront.drawio.png)
 
 ## URLs
@@ -9,7 +7,7 @@
 - live url: [Test-Internet-Speed](https://kind-ocean-003931610.4.azurestaticapps.net)
 - backend source code: [myInternetSpeedTest](https://github.com/tsxepo-web/InternetSpeedTest-Backend.git)
 
-# About the project
+## About the project
 
 - This project test the client's upload and download speed.
 - The frontend is made up of the three components below.
